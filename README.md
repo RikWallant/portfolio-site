@@ -1,1 +1,1 @@
-https://rikwallant.github.io/potential-potato/portfolio-site
+https://rikwallant.github.io/portfolio-site
