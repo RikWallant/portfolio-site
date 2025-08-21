@@ -1,0 +1,134 @@
+/* Basic reset - this is always required at the beginning of your CSS file. Keeps layout clean and avoids headaches further down the line */ 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* Navigation bar */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #fff;
+    width: 100%;
+    border-style: solid; 
+    background-color: #c7f9cc;   
+};
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* logo left, links right */
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border: 1px solid black;
+  }
+
+/* Logo */
+
+.logo {                                 /* Can change this to an image later */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Quote */
+
+#quote-display {
+    font-size: 2rem;
+}
+
+/* Nav links */
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem; /* space between buttons */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+ }
+ 
+.nav-links li a:hover {
+    color: #007BFF;
+    cursor: pointer;
+}
+
+/* Quote section (JS)  */
+
+.quote-section {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem 2rem;
+    font-size: 1rem;
+    border-style: solid;
+    background-color: #55828B;
+} 
+
+/* About me section  */
+
+.about-container {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    background-color: #c9e4ca;
+}
+
+.about-text {
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+img {
+    width: 400px;
+    height: auto;
+}
+
+/* Contact/Footer */
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-style: solid;
+    background-color: #87BBA2;
+}
+
+.contact-form {
+    margin: 1.5rem;
+    border-style: solid;
+    padding: 1.5rem;
+}
+
+form label, 
+form input, 
+form textarea, 
+form button {
+  display: block;
+  margin-bottom: 10px; /* space between elements */
+}
+
+.contact-links {
+    display: block;
+    border-style: solid;
+    padding: 1.5rem;
+}
+
+#contact h2 {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem;
+    background-color: #87BBA2;
+}
