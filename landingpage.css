@@ -132,3 +132,73 @@ form button {
     margin: 1.5rem;
     background-color: #87BBA2;
 }
+
+/* --- Global fluid bits --- */
+html { font-size: 100%; }
+body { font-family: Arial, sans-serif; }
+img { max-width: 100%; height: auto; }
+
+/* Mobile-first defaults */
+.navbar { flex-wrap: wrap; padding: 0.75rem 1rem; }
+.nav-links { 
+  width: 100%; 
+  display: flex; 
+  flex-direction: column; 
+  gap: 0.75rem; 
+  margin-top: 0.5rem; 
+}
+.logo { font-size: 1.25rem; }
+
+/* Quote section stacks nicely */
+.quote-section { 
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center; 
+}
+
+/* About section: stack image under text on phones */
+.about-container {
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+.about-text { padding: 1rem; font-size: 1.125rem; }
+.about-image img { width: 100%; max-width: 420px; }
+
+/* Contact section: stack form and links */
+.contact-container {
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+.contact-form, .contact-links { width: 100%; }
+
+/* --- Tablet up --- */
+@media (min-width: 768px) {
+  .nav-links { 
+    flex-direction: row; 
+    width: auto; 
+    margin-top: 0; 
+  }
+  .about-container {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  .about-text { font-size: 1.25rem; }
+  .contact-container {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  .contact-form, .contact-links { width: 50%; }
+}
+
+/* --- Desktop up --- */
+@media (min-width: 1024px) {
+  .logo { font-size: 1.5rem; }
+  .about-text { font-size: 1.375rem; }
+}

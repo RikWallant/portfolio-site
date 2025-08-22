@@ -88,3 +88,27 @@ header {
     font-size: 1rem;
     color: #333;
 }
+
+/* Mobile-first: single column cards */
+.projects { padding: 1rem; }
+.project {
+  display: grid;
+  grid-template-columns: 1fr;   /* stack image and text */
+  gap: 1rem;
+}
+
+/* Tablet: two columns inside each project row */
+@media (min-width: 768px) {
+  .projects { padding: 2rem; }
+  .project {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+}
+
+/* Desktop: make image a bit wider than text */
+@media (min-width: 1024px) {
+  .project {
+    grid-template-columns: 1.2fr 1fr;
+  }
+}
